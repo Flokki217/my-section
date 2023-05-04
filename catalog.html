@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/catalog.css" />
+  </head>
+  <body>
+    <section class="catalog-box container">
+      <h2 class="catalog-title">Catalog</h2>
+      <ul class="catalog-list">
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">
+              Tube Watch S42 Date Steel With Black Case
+            </h3>
+            <p class="catalog-price">€395</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">Avondale Watch Police For Men</h3>
+            <p class="catalog-price">€800</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog txt">
+            <h3 class="catalog-sec-title">
+              Diver 300M Co‑Axial Master Chronometer Chronograph
+            </h3>
+            <p class="catalog-price">€600</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">
+              Diver 300M Co-Axial Master Chronometer
+            </h3>
+            <p class="catalog-price">€1400</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">Taman Watch By Police For Men</h3>
+            <p class="catalog-price">€500</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">Malawi Watch Police For Men</h3>
+            <p class="catalog-price">€555</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">
+              Diver 300M Co-Axial Master Chronometer
+            </h3>
+            <p>1200</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">Greenlane Watch By Police For Men</h3>
+            <p class="catalog-price">€1000</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">Squardrc 5402 Chrono</h3>
+            <p>€359</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">
+              Diver 300M Co‑Axial Master Chronometer Chronograph
+            </h3>
+            <p class="catalog-price">€400</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">Citizen</h3>
+            <p class="catalog-price">€519</p>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-txt">
+            <h3 class="catalog-sec-title">Armani Exchange</h3>
+            <p class="catalog-price">€400</p>
+          </div>
+        </li>
+      </ul>
+      <button data-modal-open type="button" class="catalog-buy-btn">
+        Buy now
+      </button>
+    </section>
+    <!-- -------------Modal-Window----------------------------- -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" data-modal-close class="close-btn">X</button>
+        <div class="modal-watch">
+          <img src="./images/image.png" alt="watch" />
+          <h2 class="catalog-sec-title">Avondale Watch Police For Men</h2>
+          <p class="catalog-price">€800</p>
+        </div>
+        <form name="form-cotact" class="form-field">
+          <div class="name field">
+            <label for="name" class="label-text">Full name</label>
+            <input
+              type="text"
+              name="user-name"
+              id="name"
+              class="input-modal"
+              placeholder="Enter your full name"
+            />
+          </div>
+          <div class="email field">
+            <label for="email" class="label-text">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input-modal"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="card field">
+            <label for="card" class="label-text">Card number </label>
+            <input
+              type="text"
+              id="card"
+              class="input-modal"
+              placeholder="Enter card"
+            />
+          </div>
+          <div class="comment field">
+            <label for="comment" class="comment-label label-text"
+              >Comments
+            </label>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Enter your text"
+              class="area-box input-modal"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="catalog-buy-btn">submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
